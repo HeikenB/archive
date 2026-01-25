@@ -1,0 +1,324 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Engagement-First Design Has Deadly Consequences: How Platform Design Can Curate Real-World Violence",
+      "description": null,
+      "date": "AUG 2025",
+      "dateSort": "2025-08",
+      "type": "article",
+      "category": ["article"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "Read Article",
+      "linkExternal": true
+    },
+    {
+      "id": 2,
+      "title": "A Digital Re-Transformation of Blinkist by Integrating User Experience Design and Systems Thinking",
+      "description": null,
+      "date": "JAN 2024",
+      "dateSort": "2024-01",
+      "type": "article",
+      "category": ["article"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "Read Article",
+      "linkExternal": true
+    },
+    {
+      "id": 3,
+      "title": "My Predictions for Tech in the Music Industry",
+      "description": null,
+      "date": "SEP 2023",
+      "dateSort": "2023-09",
+      "type": "article",
+      "category": ["article"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "Read Article",
+      "linkExternal": true
+    },
+    {
+      "id": 4,
+      "title": "JPMorganChase",
+      "description": "Designed AI features across 4 cybersecurity products, scaling automation to 900k findings and reducing support demand by 53%",
+      "date": "JUL 2024-PRESENT",
+      "dateSort": "2024-07",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "JPMorganChase",
+      "logo": "assets/logos/jpmorgan.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 5,
+      "title": "JPMorganChase",
+      "description": "Ownership of UX ways of working, tooling, and processes enabling consistent delivery across 10 cybersecurity products.",
+      "date": "JUL 2024-PRESENT",
+      "dateSort": "2024-07",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "JPMorganChase",
+      "logo": "assets/logos/jpmorgan.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 6,
+      "title": "How Merging User Experience Design with Systems Thinking Can Improve Digital Transformations: The Example of the Emerging Webtoon Platform",
+      "description": null,
+      "date": "JAN 2024",
+      "dateSort": "2024-01",
+      "type": "article",
+      "category": ["article"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "Read Article",
+      "linkExternal": true
+    },
+    {
+      "id": 7,
+      "title": "A systems-led platform concept challenging Webtoon's extractive model through community-driven discovery and monetisation",
+      "description": null,
+      "date": "OCT 2023-MAY 2024",
+      "dateSort": "2023-10",
+      "type": "case-study",
+      "category": ["case-study"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "View Case Study",
+      "linkExternal": false
+    },
+    {
+      "id": 8,
+      "title": "JPMorganChase",
+      "description": "Designed and pitched Open Banking payment solutions for enterprise partners, while building UX tooling to support white-labelling and brand switching at scale.",
+      "date": "JUN 2023-AUG 2023",
+      "dateSort": "2023-06",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "JPMorganChase",
+      "logo": "assets/logos/jpmorgan.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 9,
+      "title": "The Democratisation of Applications Through Low-Code/No-code",
+      "description": null,
+      "date": "MAY 2023",
+      "dateSort": "2023-05",
+      "type": "article",
+      "category": ["article"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "Read Article",
+      "linkExternal": true
+    },
+    {
+      "id": 10,
+      "title": "Kool Stories",
+      "description": "Early UX designer helping shape a social edtech startup, driving a strategic shift from B2C to B2B through partnerships and cross-functional delivery.",
+      "date": "SEP 2022-MAR 2023",
+      "dateSort": "2022-09",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "Kool Stories",
+      "logo": "assets/logos/koolstories.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 11,
+      "title": "A data visualisation-driven project helping anime viewers navigate choice overload and discover what to watch.",
+      "description": null,
+      "date": "OCT 2022-JAN 2023",
+      "dateSort": "2022-10",
+      "type": "case-study",
+      "category": ["case-study"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "View Case Study",
+      "linkExternal": false
+    },
+    {
+      "id": 12,
+      "title": "Exploring accessibility and navigation by designing a maritime GPS set in the fictional world of One Piece",
+      "description": null,
+      "date": "JAN 2023",
+      "dateSort": "2023-01",
+      "type": "case-study",
+      "category": ["case-study", "personal-project"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "View Case Study",
+      "linkExternal": false
+    },
+    {
+      "id": 13,
+      "title": "Exploring collections, tagging, and weighted signals as alternatives to algorithmic recommendation",
+      "description": null,
+      "date": "AUG 2022-JAN 2023",
+      "dateSort": "2022-08",
+      "type": "case-study",
+      "category": ["case-study"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "View Case Study",
+      "linkExternal": false
+    },
+    {
+      "id": 14,
+      "title": "Supporting accessible preconception health through visual and motion design",
+      "description": null,
+      "date": "APR 2022",
+      "dateSort": "2022-04",
+      "type": "personal-project",
+      "category": ["case-study", "personal-project"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 15,
+      "title": "Blokbot",
+      "description": "Sole UX designer on a crypto-trading and NFT startup, creating dashboard prototypes that secured investor backing and early stakeholder buy-in",
+      "date": "DEC 2021 - JUL 2022",
+      "dateSort": "2021-12",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "Blokbot",
+      "logo": "assets/logos/blokbot.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 16,
+      "title": "Digital Influx",
+      "description": "First UX Designer, delivering UX learning content for a global edtech platform, while onboarding and teaching new designers.",
+      "date": "SEP 2021 - DEC 2021",
+      "dateSort": "2021-09",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "Digital Influx",
+      "logo": "assets/logos/digitalinflux.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 17,
+      "title": "The Digital Nomad Project",
+      "description": "Guided UX and learning design for a non-profit platform supporting freelancers, enabling a live cohort to exceed 200 participants",
+      "date": "AUG 2021-NOV 2021",
+      "dateSort": "2021-08",
+      "type": "experience",
+      "category": ["experience"],
+      "company": "The Digital Nomad Project",
+      "logo": "assets/logos/digitalnomad.png",
+      "link": "#",
+      "linkText": "View Summary",
+      "linkExternal": false
+    },
+    {
+      "id": 18,
+      "title": "Growmi",
+      "description": "Owned end-to-end product design and build for a wellbeing app, integrating APIs and Firebase to ship a community recognised product with 100+ users.",
+      "date": "DEC 2020-SEP 2022",
+      "dateSort": "2020-12",
+      "type": "case-study",
+      "category": ["case-study", "personal-project"],
+      "company": "Growmi",
+      "logo": "assets/logos/growmi.png",
+      "link": "#",
+      "linkText": "View Case Study",
+      "linkExternal": false
+    },
+    {
+      "id": 19,
+      "title": "Exploring cultural and sensitive social themes communicated through illustration and augmented reality.",
+      "description": null,
+      "date": "JUL 2020",
+      "dateSort": "2020-07",
+      "type": "case-study",
+      "category": ["case-study", "personal-project"],
+      "company": null,
+      "logo": null,
+      "link": "#",
+      "linkText": "View Case Study",
+      "linkExternal": false
+    }
+  ],
+  "credentials": [
+    {
+      "organization": "IBM",
+      "title": "Enterprise Design Thinking Practitioner",
+      "type": "Course"
+    },
+    {
+      "organization": "UAL",
+      "title": "1st Class Honors | User Experience Design",
+      "type": "Bachelors"
+    },
+    {
+      "organization": "Avado",
+      "title": "Data Analyst Accelerator Skills",
+      "type": "Bootcamp"
+    },
+    {
+      "organization": "D&AD",
+      "title": "2024 New Bloods Portfolio Winner",
+      "type": "Competition"
+    },
+    {
+      "organization": "The Open University",
+      "title": "Cyber Foundations",
+      "type": "Course"
+    },
+    {
+      "organization": "Kaggle",
+      "title": "Python",
+      "type": "Course"
+    }
+  ],
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "#",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Medium",
+      "url": "#",
+      "icon": "medium"
+    },
+    {
+      "name": "Behance",
+      "url": "#",
+      "icon": "behance"
+    },
+    {
+      "name": "GitHub",
+      "url": "#",
+      "icon": "github"
+    }
+  ]
+}

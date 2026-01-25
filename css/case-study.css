@@ -1,0 +1,287 @@
+/* ==========================================================================
+   Case Study Page Styles
+   ========================================================================== */
+
+.case-study-page {
+  background: var(--color-white);
+}
+
+/* Layout */
+.case-study-layout {
+  display: flex;
+  min-height: calc(100vh - var(--nav-height));
+  padding-top: var(--nav-height);
+}
+
+/* Sidebar */
+.case-study-sidebar {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  width: 320px;
+  height: calc(100vh - var(--nav-height));
+  background: var(--color-gray-200);
+  padding: 24px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black);
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.back-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.back-link:hover {
+  color: var(--color-gray-600);
+}
+
+.case-study-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-black);
+  margin-bottom: 24px;
+}
+
+/* Scrollspy */
+.scrollspy {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollspy-item {
+  padding: 12px 0;
+  font-size: 14px;
+  color: var(--color-gray-600);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.scrollspy-item:hover {
+  color: var(--color-black);
+}
+
+.scrollspy-item.active {
+  font-weight: 600;
+  color: var(--color-black);
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+}
+
+.scrollspy-item-title {
+  display: block;
+}
+
+.scrollspy-item-page {
+  display: block;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--color-gray-400);
+  margin-top: 4px;
+}
+
+.scrollspy-item:not(.active) .scrollspy-item-page {
+  display: none;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+  flex: 1;
+  margin-left: 320px;
+  background: var(--color-gray-200);
+  height: calc(100vh - var(--nav-height));
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.pdf-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pdf-page {
+  background: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+  scroll-margin-top: 16px;
+}
+
+.pdf-page canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pdf-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.pdf-page-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 8.5 / 11;
+  background: var(--color-gray-400);
+}
+
+.pdf-page-placeholder svg {
+  width: 64px;
+  height: 64px;
+  color: var(--color-gray-600);
+  background: var(--color-gray-600);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* PDF Loading State */
+.pdf-page-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  aspect-ratio: 8.5 / 11;
+  background: var(--color-gray-300);
+  color: var(--color-gray-600);
+  font-size: 14px;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-gray-400);
+  border-top-color: var(--color-black);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* PDF Error State */
+.pdf-page-error,
+.pdf-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 8.5 / 11;
+  background: var(--color-gray-300);
+  color: var(--color-gray-600);
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Mobile Sidebar Toggle */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 200;
+}
+
+.sidebar-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .case-study-sidebar {
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+  }
+
+  .case-study-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .pdf-viewer {
+    margin-left: 0;
+  }
+
+  .sidebar-toggle {
+    display: flex;
+  }
+
+  /* Overlay when sidebar is open */
+  .case-study-layout::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    z-index: 99;
+  }
+
+  .case-study-layout.sidebar-open::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-study-sidebar {
+    width: 280px;
+    padding: 16px;
+  }
+
+  .case-study-title {
+    font-size: 20px;
+  }
+
+  .pdf-viewer {
+    padding: 12px;
+  }
+}

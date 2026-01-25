@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HB Portfolio | Systems-minded UX Designer</title>
+  <meta name="description" content="Systems-minded UX designer solving complex problems in cybersecurity & emerging tech">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav-header" id="navHeader">
+    <nav class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="assets/logos/hb-logo.png" alt="HB Logo" width="40" height="40">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Systems-minded UX designer solving complex problems in cybersecurity & emerging tech</h1>
+      <p class="hero-subtitle">Welcome! This is an archive of my works — from deep-dive case studies to roles, experiments, and writing. What are you after?</p>
+
+      <div class="hero-cta">
+        <div class="cta-radio-group">
+          <button class="cta-radio active" data-filter-preset="hiring">I'm Hiring</button>
+          <button class="cta-radio" data-filter-preset="exploring">I'm Exploring</button>
+          <button class="cta-radio" data-filter-preset="learning">I'm Learning</button>
+        </div>
+      </div>
+      <p class="hero-cta-hint">Selection will apply recommended filters below.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar with-nav" id="filterBar">
+    <div class="filter-container">
+      <div class="filter-left">
+        <span class="filter-label">FILTERS</span>
+        <div class="filter-pills" id="filterPills">
+          <button class="filter-pill filter-pill--experience active" data-filter="experience">
+            <span class="pill-dot"></span>
+            Experience
+            <span class="pill-close">&times;</span>
+          </button>
+          <button class="filter-pill filter-pill--case-study active" data-filter="case-study">
+            <span class="pill-dot"></span>
+            Case Study
+            <span class="pill-close">&times;</span>
+          </button>
+          <button class="filter-pill filter-pill--personal-project" data-filter="personal-project">
+            <span class="pill-dot"></span>
+            Personal Project
+            <span class="pill-close">&times;</span>
+          </button>
+          <button class="filter-pill filter-pill--article" data-filter="article">
+            <span class="pill-dot"></span>
+            Article
+            <span class="pill-close">&times;</span>
+          </button>
+        </div>
+      </div>
+      <div class="filter-right">
+        <label class="sort-label">SORT BY</label>
+        <div class="sort-dropdown">
+          <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <main class="projects-section">
+    <div class="projects-section-inner">
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be populated by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Credentials Section -->
+  <section class="credentials-section" id="credentials">
+    <h2 class="credentials-title">Community, Awards & Learning</h2>
+    <div class="credentials-marquee" id="credentialsMarquee">
+      <div class="credentials-track" id="credentialsTrack">
+        <!-- Credentials will be populated by JavaScript (duplicated for seamless loop) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <h2 class="footer-title">Get in<br>touch!</h2>
+      <div class="footer-social" id="socialLinks">
+        <!-- Social links will be populated by JavaScript -->
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2026 Heiken. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top FAB -->
+  <button class="fab-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="6" x2="19" y2="6"/>
+      <polyline points="12 10 12 18"/>
+      <polyline points="8 14 12 10 16 14"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
