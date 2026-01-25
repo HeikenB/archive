@@ -174,7 +174,7 @@
     const linkClasses = ['card-link'];
     if (isExternal) linkClasses.push('card-link--external');
     if (!project.featured) linkClasses.push('card-link--tertiary');
-
+    // This is a comment
     return `
       <article class="${cardClasses.join(' ')}" data-categories="${project.category.join(',')}">
         ${cardContent}
