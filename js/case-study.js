@@ -9,7 +9,7 @@
   const caseStudyData = {
     'webtoon': {
       title: 'A systems-led platform concept challenging Webtoon\'s extractive model through community-driven discovery and monetisation',
-      pdfPath: 'assets/case-studies/webtoon/webtoon.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2Fwebtoon.pdf?alt=media',
       totalPages: 102,
       sections: [
         { title: 'Cover', page: 1 },
@@ -118,7 +118,7 @@
     },
     'anime-data-viz': {
       title: 'A data visualisation-driven project helping anime viewers navigate choice overload and discover what to watch',
-      pdfPath: 'assets/case-studies/anime-data-viz/anime-data-viz.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2Fanime-data-viz.pdf?alt=media',
       totalPages: 21,
       sections: [
         { title: 'Cover', page: 1 },
@@ -146,7 +146,7 @@
     },
     'onepiece-gps': {
       title: 'Exploring accessibility and navigation by designing a maritime GPS set in the fictional world of One Piece',
-      pdfPath: 'assets/case-studies/onepiece-gps/onepiece-gps.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2Fonepiece-gps.pdf?alt=media',
       totalPages: 14,
       sections: [
         { title: 'Overview', page: 1 },
@@ -167,7 +167,7 @@
     },
     'algorithmic-recommendation': {
       title: 'Exploring collections, tagging, and weighted signals as alternatives to algorithmic recommendation',
-      pdfPath: 'assets/case-studies/algorithmic-recommendation/algorithmic-recommendation.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2Falgorithmic-recommendation.pdf?alt=media',
       totalPages: 25,
       sections: [
         { title: 'Cover', page: 1 },
@@ -199,7 +199,7 @@
     },
     'growmi': {
       title: 'Owned end-to-end product design and build for a wellbeing app, integrating APIs and Firebase to ship a community recognised product with 100+ users',
-      pdfPath: 'assets/case-studies/growmi/GrowMi.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2FGrowMi.pdf?alt=media',
       totalPages: 34,
       sections: [
         { title: 'Cover', page: 1 },
@@ -240,7 +240,7 @@
     },
     'cultural-themes-ar': {
       title: 'Exploring cultural and sensitive social themes communicated through illustration and augmented reality',
-      pdfPath: 'assets/case-studies/cultural-themes-ar/Japanese Book.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2FJapanese%20Book.pdf?alt=media',
       totalPages: 18,
       sections: [
         { title: 'Cover', page: 1 },
@@ -265,7 +265,7 @@
     },
     'etsy': {
       title: 'Using UX practices to optimise an existing ecommerce store on Etsy',
-      pdfPath: 'assets/case-studies/etsy/Etsy Store.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2FEtsy%20Store.pdf?alt=media',
       totalPages: 10,
       sections: [
         { title: 'Cover', page: 1 },
@@ -282,7 +282,7 @@
     },
     'webcomic-publishing': {
       title: 'Research Study on the Webcomic Publishing Industry',
-      pdfPath: 'assets/case-studies/webcomic-publishing/Webcomic Publishing.pdf',
+      pdfPath: 'https://firebasestorage.googleapis.com/v0/b/portfolio-archive-fddf8.firebasestorage.app/o/case-studies%2FWebcomic%20Publishing.pdf?alt=media',
       totalPages: 33,
       sections: [
         { title: 'Cover', page: 1 },
