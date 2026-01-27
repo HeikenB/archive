@@ -352,7 +352,7 @@
 
     if (currentCaseStudy) {
       renderCaseStudy();
-      // setupScrollspy();
+      setupScrollspy();
       setupMobileSidebar();
 
       if (currentCaseStudy.pdfPath) {
