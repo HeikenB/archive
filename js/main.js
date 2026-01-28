@@ -8,14 +8,14 @@
   // Embedded Data
   const DATA = {
     projects: [
-      { id: 1, title: "Engagement-First Design Has Deadly Consequences: How Platform Design Can Curate Real-World Violence", description: null, date: "AUG 2025", dateSort: "2025-08", type: "article", category: ["article"], company: null, logo: null, link: "#", linkText: "Read Article", linkExternal: true },
-      { id: 2, title: "A Digital Re-Transformation of Blinkist by Integrating User Experience Design and Systems Thinking", description: null, date: "JAN 2024", dateSort: "2024-01", type: "article", category: ["article"], company: null, logo: null, link: "#", linkText: "Read Article", linkExternal: true },
-      { id: 3, title: "My Predictions for Tech in the Music Industry", description: null, date: "SEP 2023", dateSort: "2023-09", type: "article", category: ["article"], company: null, logo: null, link: "#", linkText: "Read Article", linkExternal: true },
+      { id: 1, title: "Engagement-First Design Has Deadly Consequences: How Platform Design Can Curate Real-World Violence", description: null, date: "AUG 2025", dateSort: "2025-08", type: "article", category: ["article"], company: null, logo: null, link: "https://medium.com/@Rhizome001/re-thinking-engagement-first-design-how-social-media-curates-real-world-violence-8fd62c9b1477", linkText: "Read Article", linkExternal: true },
+      { id: 2, title: "A Digital Re-Transformation of Blinkist by Integrating User Experience Design and Systems Thinking", description: null, date: "JAN 2024", dateSort: "2024-01", type: "article", category: ["article"], company: null, logo: null, link: "https://medium.com/@Rhizome001/a-digital-re-transformation-of-blinkist-by-integrating-user-experience-design-and-systems-thinking-9a1a03955b48", linkText: "Read Article", linkExternal: true },
+      { id: 3, title: "My Predictions for Tech in the Music Industry", description: null, date: "SEP 2023", dateSort: "2023-09", type: "article", category: ["article"], company: null, logo: null, link: "https://medium.com/@Rhizome001/my-predictions-for-tech-in-the-music-industry-db07b76bde03", linkText: "Read Article", linkExternal: true },
       { id: 4, title: "JPMorganChase", description: ["Designed AI features across 4 cybersecurity products, scaling automation to 900k findings and reducing support demand by 53%", "Ownership of UX ways of working, tooling, and processes enabling consistent delivery across 10 cybersecurity products."], date: "JUL 2024-PRESENT", dateSort: "2024-07", type: "experience", category: ["experience"], company: "JPMorganChase", logo: "assets/logos/jpmorgan.png", link: "summary.html?id=jpmorgan-cybersecurity", linkText: "View Summary", linkExternal: false, featured: true },
-      { id: 6, title: "How Merging User Experience Design with Systems Thinking Can Improve Digital Transformations: The Example of the Emerging Webtoon Platform", description: null, date: "JAN 2024", dateSort: "2024-01", type: "article", category: ["article"], company: null, logo: null, link: "#", linkText: "Read Article", linkExternal: true, featured: true },
+      { id: 6, title: "How Merging User Experience Design with Systems Thinking Can Improve Digital Transformations: The Example of the Emerging Webtoon Platform", description: null, date: "JAN 2024", dateSort: "2024-01", type: "article", category: ["article"], company: null, logo: null, link: "https://medium.com/@Rhizome001/how-merging-user-experience-design-with-systems-thinking-can-improve-digital-transformations-the-b9fc0a86e680", linkText: "Read Article", linkExternal: true, featured: true },
       { id: 7, title: "A systems-led platform concept challenging Webtoon's extractive model through community-driven discovery and monetisation", description: null, date: "OCT 2023-MAY 2024", dateSort: "2023-10", type: "case-study", category: ["case-study"], company: null, logo: null, link: "case-study.html?id=webtoon", linkText: "View Case Study", linkExternal: false, featured: true },
       { id: 8, title: "JPMorganChase", description: "Designed and pitched Open Banking payment solutions for enterprise partners, while building UX tooling to support white-labelling and brand switching at scale.", date: "JUN 2023-AUG 2023", dateSort: "2023-06", type: "experience", category: ["experience"], company: "JPMorganChase", logo: "assets/logos/jpmorgan.png", link: "summary.html?id=jpmorgan-payments", linkText: "View Summary", linkExternal: false },
-      { id: 9, title: "The Democratisation of Applications Through Low-Code/No-code", description: null, date: "MAY 2023", dateSort: "2023-05", type: "article", category: ["article"], company: null, logo: null, link: "#", linkText: "Read Article", linkExternal: true },
+      { id: 9, title: "The Democratisation of Applications Through Low-Code/No-code", description: null, date: "MAY 2023", dateSort: "2023-05", type: "article", category: ["article"], company: null, logo: null, link: "https://medium.com/@Rhizome001/the-democratisation-of-applications-through-low-code-no-code-4dbbd87fdc24", linkText: "Read Article", linkExternal: true },
       { id: 10, title: "Kool Stories", description: "Early UX designer helping shape a social edtech startup, driving a strategic shift from B2C to B2B through partnerships and cross-functional delivery.", date: "SEP 2022-MAR 2023", dateSort: "2022-09", type: "experience", category: ["experience"], company: "Kool Stories", logo: "assets/logos/koolstories.png", link: "summary.html?id=kool-stories", linkText: "View Summary", linkExternal: false },
       { id: 11, title: "A data visualisation-driven project helping anime viewers navigate choice overload and discover what to watch.", description: null, date: "OCT 2022-JAN 2023", dateSort: "2022-10", type: "case-study", category: ["case-study"], company: null, logo: null, link: "case-study.html?id=anime-data-viz", linkText: "View Case Study", linkExternal: false },
       { id: 12, title: "Exploring accessibility and navigation by designing a maritime GPS set in the fictional world of One Piece", description: null, date: "JAN 2023", dateSort: "2023-01", type: "case-study", category: ["case-study", "personal-project"], company: null, logo: null, link: "case-study.html?id=onepiece-gps", linkText: "View Case Study", linkExternal: false },
@@ -40,18 +40,18 @@
       { organization: "Kaggle", title: "Python", type: "Course" },
       { organization: "Kaggle", title: "Intro & Intermediate Machine Learning", type: "Course" },
       { organization: "Google", title: "Fundamentals of Digital Marketing", type: "Course" },
-      { organization: "Technology Internship", title: "Software Development", type: "Internship" },
-      { organization: "BrightNetwork", title: "Business, Operations & Strategy", type: "Experience" },
-      { organization: "BrightNetwork", title: "6 Month Tech Internship", type: "Experience" },
+      { organization: "BrightNetwork", title: "Technology Internship Experience", type: "Internship" },
+      { organization: "BrightNetwork", title: "Business, Operations & Marketing Experience", type: "Internship" },
+      { organization: "StepUp", title: "6 Month Tech Accelerator", type: "Community" },
       { organization: "Stepilo", title: "Finance App", type: "Hackathon" },
       { organization: "Udemy", title: "MITRE ATT&CK", type: "Course" },
-      { organization: "ProjectSet", title: "App Concept", type: "Course" }
+      { organization: "ProjectSet", title: "Heathy Food Concept App", type: "Hackathon" }
     ],
     social: [
-      { name: "LinkedIn", url: "#", icon: "linkedin" },
-      { name: "Medium", url: "#", icon: "medium" },
-      { name: "Kaggle", url: "#", icon: "kaggle" },
-      { name: "GitHub", url: "#", icon: "github" }
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/heiken-bautista-8785311b6/", icon: "linkedin" },
+      { name: "Medium", url: "https://medium.com/@Rhizome001", icon: "medium" },
+      { name: "Kaggle", url: "https://www.kaggle.com/heikenbautista", icon: "kaggle" },
+      { name: "GitHub", url: "https://github.com/HeikenB", icon: "github" }
     ]
   };
 
