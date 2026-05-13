@@ -404,9 +404,13 @@
       // Set worker source
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-      // Load the PDF
+      // Load the PDF — wait for both download and minimum display time
       const loadingTask = pdfjsLib.getDocument(currentCaseStudy.pdfPath);
-      pdfDoc = await loadingTask.promise;
+      const [doc] = await Promise.all([
+        loadingTask.promise,
+        new Promise(resolve => setTimeout(resolve, 2000))
+      ]);
+      pdfDoc = doc;
 
       hideLoadingScreen();
 
