@@ -401,30 +401,23 @@
     try {
       showLoadingScreen();
 
-      // Set worker source
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-      // Load the PDF — wait for both download and minimum display time
       const loadingTask = pdfjsLib.getDocument(currentCaseStudy.pdfPath);
-      const [doc] = await Promise.all([
-        loadingTask.promise,
-        new Promise(resolve => setTimeout(resolve, 2000))
-      ]);
-      pdfDoc = doc;
+      const minDisplay = new Promise(resolve => setTimeout(resolve, 2000));
 
-      hideLoadingScreen();
+      // Wait for PDF to be ready
+      pdfDoc = await loadingTask.promise;
 
-      // Create placeholders for all pages
+      // Start rendering in background while loading screen is still up
       createPagePlaceholders();
-
-      // Render visible pages
       renderVisiblePages();
-
-      // Setup lazy loading on scroll
       pdfViewer.addEventListener('scroll', debounce(renderVisiblePages, 100));
-
-      // Update active section after pages are created
       updateActiveSection();
+
+      // Wait out the remaining minimum display time, then reveal
+      await minDisplay;
+      hideLoadingScreen();
 
     } catch (error) {
       hideLoadingScreen();
