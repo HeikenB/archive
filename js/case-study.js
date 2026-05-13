@@ -515,7 +515,7 @@
 
       // Create canvas
       const canvas = document.createElement('canvas');
-      const context = canvas.getContext('2d');
+      const context = canvas.getContext('2d', { willReadFrequently: true });
 
       // Set canvas size to high-res dimensions
       canvas.height = scaledViewport.height;
