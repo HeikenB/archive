@@ -338,6 +338,14 @@
   let renderedPages = new Set();
   let renderQueue = [];
   let isRendering = false;
+  let loadingMessageInterval = null;
+
+  const loadingMessages = [
+    'Fetching from the archive',
+    'Good work takes time to load too',
+    'Months of thinking, incoming',
+    'Almost there'
+  ];
 
   // ==========================================================================
   // Initialize
@@ -365,14 +373,42 @@
   // PDF Loading with PDF.js
   // ==========================================================================
 
+  function showLoadingScreen() {
+    const screen = document.getElementById('pdfLoadingScreen');
+    const msgEl = document.getElementById('pdfLoadingMessage');
+    if (!screen || !msgEl) return;
+
+    screen.classList.remove('hidden');
+    let i = 0;
+
+    loadingMessageInterval = setInterval(() => {
+      msgEl.classList.add('fade');
+      setTimeout(() => {
+        i = (i + 1) % loadingMessages.length;
+        msgEl.textContent = loadingMessages[i];
+        msgEl.classList.remove('fade');
+      }, 250);
+    }, 2500);
+  }
+
+  function hideLoadingScreen() {
+    clearInterval(loadingMessageInterval);
+    const screen = document.getElementById('pdfLoadingScreen');
+    if (screen) screen.classList.add('hidden');
+  }
+
   async function loadPdf() {
     try {
+      showLoadingScreen();
+
       // Set worker source
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
       // Load the PDF
       const loadingTask = pdfjsLib.getDocument(currentCaseStudy.pdfPath);
       pdfDoc = await loadingTask.promise;
+
+      hideLoadingScreen();
 
       // Create placeholders for all pages
       createPagePlaceholders();
@@ -387,6 +423,7 @@
       updateActiveSection();
 
     } catch (error) {
+      hideLoadingScreen();
       console.error('Error loading PDF:', error);
       pdfPages.innerHTML = '<div class="pdf-error">Error loading PDF. Please try again later.</div>';
     }
@@ -450,16 +487,18 @@
 
     isRendering = true;
 
-    // Sort by page number to render in order
     renderQueue.sort((a, b) => a.pageNum - b.pageNum);
 
     while (renderQueue.length > 0) {
-      const { pageNum, container } = renderQueue.shift();
-
-      if (!renderedPages.has(pageNum)) {
-        await renderPage(pageNum, container);
-        renderedPages.add(pageNum);
-      }
+      const batch = renderQueue.splice(0, 3);
+      await Promise.all(
+        batch
+          .filter(({ pageNum }) => !renderedPages.has(pageNum))
+          .map(async ({ pageNum, container }) => {
+            await renderPage(pageNum, container);
+            renderedPages.add(pageNum);
+          })
+      );
     }
 
     isRendering = false;
@@ -474,8 +513,7 @@
       const viewport = page.getViewport({ scale: 1 });
       const scale = (containerWidth - 32) / viewport.width; // 32px for padding
 
-      // Use higher resolution for crisp rendering (2x base + device pixel ratio)
-      const pixelRatio = Math.max(window.devicePixelRatio || 1, 2) * 1.5;
+      const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
       const scaledViewport = page.getViewport({ scale: scale * pixelRatio });
 
       // Create canvas
